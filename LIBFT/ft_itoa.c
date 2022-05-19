@@ -6,7 +6,7 @@
 /*   By: roumbare <roumbare@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/16 17:05:06 by roumbare          #+#    #+#             */
-/*   Updated: 2022/05/19 18:58:05 by roumbare         ###   ########.fr       */
+/*   Updated: 2022/05/19 19:09:04 by roumbare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,13 +32,13 @@ int	ft_len(int n)
 	return (count);
 }
 
-char *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	int			size;
 	char		*tab;
 
 	size = ft_len(n);
-	tab = (char *)malloc((size + 1)* sizeof(char));
+	tab = (char *)malloc((size + 1) * sizeof(char));
 	if (!tab)
 		return (NULL);
 	tab[size--] = '\0';

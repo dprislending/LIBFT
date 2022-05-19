@@ -6,7 +6,7 @@
 /*   By: roumbare <roumbare@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/18 20:22:21 by roumbare          #+#    #+#             */
-/*   Updated: 2022/05/18 21:34:29 by roumbare         ###   ########.fr       */
+/*   Updated: 2022/05/19 19:14:49 by roumbare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,5 @@ t_list	*ft_lstlast(t_list *lst)
 		return (NULL);
 	while (lst -> next)
 		lst = lst -> next;
-	return (lst)
+	return (lst);
 }

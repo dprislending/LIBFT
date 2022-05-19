@@ -6,13 +6,13 @@
 /*   By: roumbare <roumbare@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/19 18:08:16 by roumbare          #+#    #+#             */
-/*   Updated: 2022/05/19 18:10:10 by roumbare         ###   ########.fr       */
+/*   Updated: 2022/05/19 19:13:19 by roumbare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include	"libft.h"
 
-void ft_lstdelone(t_list *lst, void (*del)(void *))
+void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
 	del(lst -> content);
 	free(lst);

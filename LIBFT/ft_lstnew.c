@@ -6,7 +6,7 @@
 /*   By: roumbare <roumbare@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/18 19:59:01 by roumbare          #+#    #+#             */
-/*   Updated: 2022/05/18 21:34:40 by roumbare         ###   ########.fr       */
+/*   Updated: 2022/05/19 19:12:09 by roumbare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,9 @@ t_list	*ft_lstnew(void *content)
 {
 	t_list	*new;
 
-	new = malloc(sizeof(new*));
+	new = malloc(sizeof (new *));
 	if (!new)
-		return	NULL;
+		return (NULL);
 	new -> content = content;
 	new -> next = NULL;
 	return (new);

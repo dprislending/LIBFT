@@ -6,7 +6,7 @@
 /*   By: roumbare <roumbare@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/19 18:38:35 by roumbare          #+#    #+#             */
-/*   Updated: 2022/05/19 18:42:06 by roumbare         ###   ########.fr       */
+/*   Updated: 2022/05/19 19:14:30 by roumbare         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-		t_list	*dest;
-		t_list	*new;
+	t_list	*dest;
+	t_list	*new;
 
 	new = NULL;
 	if (!lst || !f || !del)
